@@ -1,0 +1,5 @@
+#!/bin/bash
+#mount ipad
+iproxy 2222 22 &
+sudo sshfs -o allow_other root@localhost:/ /mnt/ipad -p 2222
+cd /mnt/ipad

@@ -1,0 +1,10 @@
+#!/bin/bash
+#phone home
+if [ $# = 0 ]; then
+       	echo "moshing"
+        mosh -ssh "ssh -p 20273" seki@rgm79s.ddns.net
+
+elif [ $1 = "-s" ]; then
+	echo "sshing"
+        ssh -p 20273 seki@rgm79s.ddns.net
+fi

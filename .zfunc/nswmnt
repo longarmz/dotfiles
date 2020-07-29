@@ -1,0 +1,4 @@
+#!/bin/bash
+#mount nintendo switch sd card
+sudo mount /dev/mmcblk0p1 /mnt/sd/
+cd /mnt/sd/
