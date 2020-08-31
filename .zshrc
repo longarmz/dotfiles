@@ -25,4 +25,4 @@ autoload -Uz imnt
 autoload -Uz nswmnt
 
 # alias
-alias config='/usr/bin/git --git-dir=/home/longarmz/.cfg/ --work-tree=/home/longarmz'
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
