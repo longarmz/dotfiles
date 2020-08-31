@@ -18,9 +18,6 @@ compinit
 # Path                                                              #
 #####################################################################
 
-export PATH="{$PATH}:/home/longarmz/Applications"
-export PATH=$PATH:$HOME/.dotnet/tools
-
 # autoload zfunctions
 fpath=(~/.zfunc "${fpath[@]}")
 autoload -Uz ph
