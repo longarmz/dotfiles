@@ -25,4 +25,6 @@ autoload -Uz imnt
 autoload -Uz nswmnt
 
 # alias
+alias   sudo='sudo '
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias  purge='pacman -Rns $(pacman -Qtdq)'
