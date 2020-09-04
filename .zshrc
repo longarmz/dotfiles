@@ -24,6 +24,7 @@ fpath=(~/.zfunc "${fpath[@]}")
 autoload -Uz ph
 autoload -Uz imnt
 autoload -Uz nswmnt
+autoload -Uz aursync_wrapper
 
 # alias
 alias   sudo='sudo '
