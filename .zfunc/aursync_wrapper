@@ -16,7 +16,7 @@ ln -sf "$REPO_NAME.files.tar.xz" "$LOCAL_PATH/$REPO_NAME.files"
 
 ## Clean up older packages that may or may not have been deleted from the
 ## remote so that we do not reupload them
-rm -f "$LOCAL_PATH/"*.pkg.tar.xz
+rm -f "$LOCAL_PATH/"*.pkg.tar.zst
 
 aur-sync --no-view  --database "$REPO_NAME" --root "$LOCAL_PATH" "$@" || true
 
