@@ -26,6 +26,7 @@ autoload -Uz imnt
 autoload -Uz nswmnt
 autoload -Uz aursync_wrapper
 autoload -Uz del-from-repo
+#autoload -Uz build
 
 # alias
 alias   sudo='sudo '
