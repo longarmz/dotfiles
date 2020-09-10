@@ -32,3 +32,4 @@ autoload -Uz del-from-repo
 alias   sudo='sudo '
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias  purge='pacman -Rns $(pacman -Qtdq)'
+alias     ls='exa -l'
