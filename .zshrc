@@ -24,12 +24,9 @@ fpath=(~/.zfunc "${fpath[@]}")
 autoload -Uz ph
 autoload -Uz imnt
 autoload -Uz nswmnt
-autoload -Uz aursync_wrapper
-autoload -Uz del-from-repo
-#autoload -Uz build
 
 # alias
 alias   sudo='sudo '
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias  purge='pacman -Rns $(pacman -Qtdq)'
-alias     ls='exa -l'
+alias     ls='exa -lh'
