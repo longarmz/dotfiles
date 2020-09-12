@@ -19,6 +19,9 @@ set $mod Mod4
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 font pango:DejaVu Sans Mono 10
 
+
+default_border none
+hide_edge_borders both
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
 
@@ -194,8 +197,11 @@ bindsym XF86MonBrightnessDown exec light -U 5
 bindsym $mod+x exec i3lock
 
 #Assign Programs to workspaces
-for_window [class="firefox"] move to workspace $ws3
-for_window [class="Spotify"] move to workspace $ws4
+#for_window [class="firefox"] move to workspace $ws3
+#for_window [class="Spotify"] move to workspace $ws4
+
+#execute location services
+exec --no-startup-id /usr/lib/geoclue-2.0/demos/agent
 
 #window compositer
 exec_always picom -f
