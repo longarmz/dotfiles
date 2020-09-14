@@ -26,7 +26,8 @@ autoload -Uz imnt
 autoload -Uz nswmnt
 
 # alias
-alias   sudo='sudo '
-alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
-alias  purge='pacman -Rns $(pacman -Qtdq)'
-alias     ls='exa -lh'
+alias    sudo='sudo '
+alias  config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias   purge='pacman -Rns $(pacman -Qtdq)'
+alias      ls='exa -lh'
+alias plexamp='/usr/bin/Plexamp.AppImage --disable-seccomp-filter-sandbox --no-sandbox & disown; exit'
