@@ -17,7 +17,7 @@ compinit
 #####################################################################
 # Path                                                              #
 #####################################################################
-export PATH=/usr/lib/aurutils:$PATH
+export PATH=/usr/lib/aurutils:$HOME/.local/bin:$PATH
 
 # autoload zfunctions
 fpath=(~/.zfunc "${fpath[@]}")
