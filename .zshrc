@@ -15,10 +15,12 @@ compinit
 
 
 #####################################################################
-# Path                                                              #
+# Environment Variables                                             #
 #####################################################################
 export PATH=/usr/lib/aurutils:$HOME/.local/bin:$PATH
-
+export DEVKITPRO=/opt/devkitpro
+export DEVKITARM=/opt/devkitpro/devkitARM
+export DEVKITPPC=/opt/devkitpro/devkitPPC
 # autoload zfunctions
 fpath=(~/.zfunc "${fpath[@]}")
 autoload -Uz ph
