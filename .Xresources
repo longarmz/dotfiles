@@ -41,3 +41,8 @@
 URxvt*font: xft:iosevka:size=15
 
 URxvt.depth: 32
+
+Xft.dpi: 170
+Xft.hinting: true
+Xft.rgba: rgb
+Xft.hintstyle: hintfull
