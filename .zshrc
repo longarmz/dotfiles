@@ -12,8 +12,9 @@ zstyle :compinstall filename '/home/longarmz/.zshrc'
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
-
-
+autoload -Uz promptinit
+promptinit
+prompt walters
 #####################################################################
 # Environment Variables                                             #
 #####################################################################

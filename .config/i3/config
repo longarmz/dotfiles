@@ -208,7 +208,8 @@ bindsym XF86MonBrightnessUp exec light -A 5
 bindsym XF86MonBrightnessDown exec light -U 5
 
 # Display Wallpaper
-exec_always feh --bg-fill /home/longarmz/Dropbox/wallpaper/fallpixel.jpg
+#exec_always feh --bg-fill /home/longarmz/Dropbox/wallpaper/fallpixel.jpg
+exec_always feh --bg-tile ~/Downloads/bicycles.png
 
 # Keybind for i3lock 
 bindsym $mod+x exec i3lock
