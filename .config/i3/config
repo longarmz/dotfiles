@@ -208,8 +208,7 @@ bindsym XF86MonBrightnessUp exec light -A 5
 bindsym XF86MonBrightnessDown exec light -U 5
 
 # Display Wallpaper
-#exec_always feh --bg-fill /home/longarmz/Dropbox/wallpaper/fallpixel.jpg
-exec_always feh --bg-tile ~/Downloads/bicycles.png
+exec_always feh --bg-fill /home/longarmz/Dropbox/wallpaper/fallpixel.jpg
 
 # Keybind for i3lock 
 bindsym $mod+x exec i3lock
@@ -221,7 +220,7 @@ bindsym $mod+x exec i3lock
 #execute location services
 exec --no-startup-id /usr/lib/geoclue-2.0/demos/agent
 exec --no-startup-id /usr/bin/libinput-gestures-setup start
-exec --no-startup-id /usr/bin/xmodmap "$HOME"/.lctrlcapslockswap
+exec_always --no-startup-id /usr/bin/xmodmap "$HOME"/.lctrlcapslockswap
 
 #window compositer
 exec_always picom -f

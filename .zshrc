@@ -18,7 +18,7 @@ prompt walters
 #####################################################################
 # Environment Variables                                             #
 #####################################################################
-export PATH=/usr/lib/aurutils:$HOME/.local/bin:$PATH
+export PATH=/usr/lib/aurutils:/usr/include:$HOME/.local/bin:$PATH
 export DEVKITPRO=/opt/devkitpro
 export DEVKITARM=/opt/devkitpro/devkitARM
 export DEVKITPPC=/opt/devkitpro/devkitPPC
