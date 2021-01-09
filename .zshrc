@@ -35,3 +35,7 @@ alias   purge='pacman -Rns $(pacman -Qtdq)'
 alias      ls='exa -lh'
 alias plexamp='/usr/bin/Plexamp.AppImage --disable-seccomp-filter-sandbox --no-sandbox & disown; exit'
 alias hibernate='systemctl hibernate'
+
+
+#beautify
+(cat ~/.cache/wal/sequences &)

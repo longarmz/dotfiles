@@ -49,6 +49,7 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
 fi
 
 xmodmap $HOME/.lctrlcapslockswap &
-xrdb -merge ~/.Xresources &
-picom &
+#xrdb -merge ~/.Xresources &
+wal -R &
+picom --experimental-backends &
 exec i3
