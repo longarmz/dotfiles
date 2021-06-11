@@ -51,5 +51,5 @@ fi
 xmodmap $HOME/.lctrlcapslockswap &
 #xrdb -merge ~/.Xresources &
 wal -R &
-picom --experimental-backends &
+picom -d  --experimental-backends &
 exec i3
