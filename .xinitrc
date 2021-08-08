@@ -36,7 +36,6 @@ fi
 [ -f ~/.xprofile ] && . ~/.xprofile
 
 xmodmap $HOME/.lctrlcapslockswap &
-#xrdb -merge ~/.Xresources &
 wal -R &
 picom -d  --experimental-backends &
 exec i3
