@@ -2,9 +2,9 @@
 #phone home
 if [ $# = 0 ]; then
        	echo "moshing"
-        mosh h 
+        mosh RGM79S
 
 elif [ $1 = "-s" ]; then
 	echo "sshing"
-        ssh h 
+        ssh RGM79S 
 fi
