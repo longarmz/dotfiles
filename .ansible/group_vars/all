@@ -1,2 +1,2 @@
 ---
-home: '{{ lookup('env', 'HOME') }}'
+home: "{{ lookup('env', 'HOME') }}"

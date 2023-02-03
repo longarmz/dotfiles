@@ -6,6 +6,7 @@ all:
     control:
       hosts:
         LX13DV:
+        ZK2SNW:
 
     managed:
       hosts:
