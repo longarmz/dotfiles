@@ -1,0 +1,13 @@
+all:
+  hosts:
+
+  children:
+
+    control:
+      hosts:
+        LX13DV:
+
+    managed:
+      hosts:
+        RGM79S:
+        SGQ75B:
