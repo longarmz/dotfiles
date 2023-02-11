@@ -30,6 +30,7 @@ alias        ls='exa -lh'
 alias   plexamp='/usr/bin/Plexamp.AppImage --disable-seccomp-filter-sandbox --no-sandbox & disown; exit'
 alias hibernate='systemctl hibernate'
 alias       c2c='xmodmap ~/.lctrlcapslockswap'
+alias        ap='/usr/sbin/ansible-playbook'
 
 # Beautify
 (cat ~/.cache/wal/sequences &)
