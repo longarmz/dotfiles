@@ -1,14 +1,13 @@
-all:
+control:
   hosts:
+    LX13DV:
+    ZK2SNW:
 
-  children:
+managed:
+  hosts:
+    RGM79S:
+    SGQ75B:
 
-    control:
-      hosts:
-        LX13DV:
-        ZK2SNW:
-
-    managed:
-      hosts:
-        RGM79S:
-        SGQ75B:
+lab:
+  hosts:
+    RGM79S:
