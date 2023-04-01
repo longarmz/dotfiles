@@ -1,4 +1,4 @@
 URxvt*font: xft:iosevka:size=15
-
-URxvt.depth: 32
+URxvt*depth: 32
 URxvt*scrollBar: false
+URxvt.geometry: 80x-1

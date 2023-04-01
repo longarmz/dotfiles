@@ -37,5 +37,4 @@ fi
 
 xmodmap $HOME/.lctrlcapslockswap &
 wal -R &
-picom -d  --experimental-backends &
 exec i3

@@ -223,4 +223,4 @@ exec --no-startup-id /usr/bin/libinput-gestures-setup start
 exec_always --no-startup-id /usr/bin/xmodmap "$HOME"/.lctrlcapslockswap
 
 #window compositer
-exec_always picom -f
+exec_always picom --config "$HOME"/.config/picom/picom.conf
