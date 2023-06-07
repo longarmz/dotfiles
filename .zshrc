@@ -24,13 +24,13 @@ autoload -Uz nswmnt
 autoload -Uz lsdf
 
 # Alias
-alias    dotfiles='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias    dotfiles='/usr/bin/git --git-dir=$HOME/.dotgit/ --work-tree=$HOME'
 alias        ls='exa -lh'
 alias   plexamp='/usr/bin/Plexamp.AppImage --disable-seccomp-filter-sandbox --no-sandbox & disown; exit'
 alias hibernate='systemctl hibernate'
 alias       c2c='xmodmap ~/.lctrlcapslockswap'
 alias        ap='/usr/sbin/ansible-playbook'
-alias     dtig='GIT_DIR=/$HOME/.cfg GIT_WORK_TREE=$HOME tig'
+alias     dtig='GIT_DIR=/$HOME/.dotgit GIT_WORK_TREE=$HOME tig'
 
 # Beautify
-(cat ~/.cache/wal/sequences &)
+#(cat ~/.cache/wal/sequences &)
