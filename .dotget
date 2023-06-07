@@ -1,0 +1,26 @@
+#!/bin/bash
+# clone and config dotfiles
+
+set -uo pipefail
+trap 's=$?; echo "$0: Error on line "$LINENO": $BASH_COMMAND"; exit $s' ERR
+
+git clone --bare https://github.com/longarmz/dotfiles $HOME/.dotgit
+function dotfiles {
+   /usr/bin/git --git-dir=$HOME/.dotgit --work-tree=$HOME $@
+}
+mkdir -p .config-backup
+dotfiles checkout
+if [ $? = 0 ]; then
+  echo "Checked out dotfiles.";
+  else
+    echo "Backing up pre-existing dotfiles.";
+    dotfiles checkout 2>&1 | egrep "\s+\." | awk {'print $1'} | xargs -I{} mv {} .config-backup/{}
+fi;
+
+dotfiles checkout
+dotfiles config status.showUntrackedFiles no
+dotfiles config --global user.name longarmz
+dotfiles config --global user.email longarmz@pm.me
+dotfiles config pull.rebase true
+dotfiles remote set-url origin git@github.com:longarmz/dotfiles
+dotfiles push --SET-UPSTREAM origin Main
