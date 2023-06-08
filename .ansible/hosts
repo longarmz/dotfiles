@@ -1,7 +1,8 @@
 control:
   hosts:
     LX13DV:
-    ZK2SNW:
+    WX13DV:
+    Z19SNW:
 
 managed:
   hosts:
