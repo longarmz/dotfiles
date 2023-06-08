@@ -23,4 +23,4 @@ dotfiles config --global user.name longarmz
 dotfiles config --global user.email longarmz@pm.me
 dotfiles config pull.rebase true
 dotfiles remote set-url origin git@github.com:longarmz/dotfiles
-dotfiles push --SET-UPSTREAM origin Main
+dotfiles push --set-upstream origin main
