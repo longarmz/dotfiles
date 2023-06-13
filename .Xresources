@@ -1,4 +1,11 @@
-URxvt*font: xft:iosevka:size=15
+URxvt*font: xft:iosevka:size=19
 URxvt*depth: 32
 URxvt*scrollBar: false
 URxvt.geometry: 80x-1
+Urxvt.perl-ext-common: resize-font
+
+URxvt.keysym.C-minus: resize-font:smaller
+URxvt.keysym.C-plus: resize-font:reset
+URxvt.keysym.C-equal: resize-font:bigger
+URxvt.keysym.C-question: resize-font:show
+URxvt.resize-font.step: 2
