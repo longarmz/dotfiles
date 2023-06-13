@@ -36,5 +36,6 @@ fi
 [ -f ~/.xprofile ] && . ~/.xprofile
 
 xmodmap $HOME/.lctrlcapslockswap &
+xsettingsd &
 wal -R &
 exec i3
