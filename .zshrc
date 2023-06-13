@@ -33,4 +33,4 @@ alias        ap='/usr/sbin/ansible-playbook'
 alias     dtig='GIT_DIR=/$HOME/.dotgit GIT_WORK_TREE=$HOME tig'
 
 # Beautify
-#(cat ~/.cache/wal/sequences &)
+(cat ~/.cache/wal/sequences &)
