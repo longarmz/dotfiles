@@ -1,0 +1,4 @@
+#!/bin/bash
+#mount nfs pool
+sudo mount -t nfs -o vers=4 RGM79S:/pool /mnt/pool
+cd /mnt/pool/
