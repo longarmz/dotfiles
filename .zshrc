@@ -22,6 +22,8 @@ autoload -Uz ph
 autoload -Uz imnt
 autoload -Uz nswmnt
 autoload -Uz lsdf
+autoload -Uz nfsmnt
+autoload -Uz x-auth-agent
 
 # Alias
 alias    dotfiles='/usr/bin/git --git-dir=$HOME/.dotgit/ --work-tree=$HOME'
