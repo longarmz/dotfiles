@@ -22,15 +22,17 @@ autoload -Uz ph
 autoload -Uz imnt
 autoload -Uz nswmnt
 autoload -Uz lsdf
+autoload -Uz nfsmnt
+autoload -Uz x-auth-agent
 
 # Alias
 alias    dotfiles='/usr/bin/git --git-dir=$HOME/.dotgit/ --work-tree=$HOME'
-alias        ls='exa -lh'
-alias   plexamp='/usr/bin/Plexamp.AppImage --disable-seccomp-filter-sandbox --no-sandbox & disown; exit'
+alias        ls='exa -lah'
 alias hibernate='systemctl hibernate'
 alias       c2c='xmodmap ~/.lctrlcapslockswap'
 alias        ap='/usr/sbin/ansible-playbook'
 alias     dtig='GIT_DIR=/$HOME/.dotgit GIT_WORK_TREE=$HOME tig'
+alias    ssh='TERM=xterm-color ssh'
 
 # Beautify
 (cat ~/.cache/wal/sequences &)
