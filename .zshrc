@@ -17,7 +17,7 @@ promptinit
 prompt walters
 
 # Load zfunctions
-fpath=(~/.zfunc "${fpath[@]}")
+fpath=(~/.bin "${fpath[@]}")
 autoload -Uz ph
 autoload -Uz imnt
 autoload -Uz nswmnt
@@ -27,7 +27,7 @@ autoload -Uz x-auth-agent
 
 # Alias
 alias    dotfiles='/usr/bin/git --git-dir=$HOME/.dotgit/ --work-tree=$HOME'
-alias        ls='exa -lah'
+alias        ls='exa -lh'
 alias hibernate='systemctl hibernate'
 alias       c2c='xmodmap ~/.lctrlcapslockswap'
 alias        ap='/usr/sbin/ansible-playbook'
